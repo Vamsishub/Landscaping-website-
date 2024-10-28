@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Contact Us</title>
+  <link rel="stylesheet" type="text/css" href="stylerules.css">
+  <meta charset="utf-8">
+  <meta name="keywords" content="landscaping inquiries, request a quote">
+  <meta name="description" content="Contact us for any landscaping inquiries, schedule a consultation, or request a quote for your landscaping project.">
+  <meta name="author" content="vamsidhar reddy jannapally">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/jquery.validate.min.js"></script>
+  
+  <script>
+    $(document).ready(function() {
+      $('#mailList').validate({
+        rules: {
+          name: {
+            required: true,
+            minlength: 2
+          },
+          email: {
+            required: true,
+            email: true
+          },
+          phone: {
+            required: true,
+            minlength: 10,
+            digits: true
+          }
+        },
+        messages: {
+          name: {
+            required: "Please enter your name",
+            minlength: "Name must be at least 2 characters long"
+          },
+          email: {
+            required: "Please enter your email address",
+            email: "Please enter a valid email address"
+          },
+          phone: {
+            required: "Please enter your phone number",
+            minlength: "Phone number must be at least 10 digits long",
+            digits: "Enter numeric values in contact number"
+          }
+        },
+        submitHandler: function(form) {
+          form.submit();
+        }
+      });
+    });
+  </script>
+  
+
+</head>
+
+<body>
+  
+    <div id="container" class="centertext">
+      
+      <header><h1> V Urban Landscaping </h1></header>
+      <p> </p>
+      </div>
+      <nav>
+        <table class='Menu'>
+          <tr>
+          <td>  <a href="index.html">HOME</a> |</td>
+                    <td><a href="About Us.html">ABOUT US</a> |</td>
+            <td><a href="Portfolio.html"> PORTFOLIO </a> |</td>
+            <td><a href="Services.html">SERVICES</a></td>
+            <td><a href="Contact Us.html">CONTACT US</a> |</td>
+            
+          </tr>
+        </table>
+      </nav>
+      <div id="left"></div>
+      <div id="main">
+      <h1>Contact Us </h1>
+<a href="assets/contactus.jpg" target="_blank">
+  <img src="assets/contactus.jpg" alt=" Garden Landscaping">
+      </a>
+      
+
+      <p>Feel free to reach out to us for any inquiries or to schedule a consultation.</p>
+      <p>We are located at abcabc , and you can contact us at +1987654321 or vurbanlandscapingservices@gmail.com.</p>
+  <p>Monday to Friday: 9 AM to 5 PM</p>
+  <p>Saturday: 10 AM to 2 PM</p>
+  <p>Sunday: Closed</p>
+      <br>
+      <br>
+      <br>
+      <br>
+
+    <h3>Schedule Your Appointment</h3>
+    <form id="mailList" action="addtomailist.php" method="post">
+      <table>
+        <tr>
+          <td><label for="name">Name:</label></td>
+          <td><input type="text" id="name" name="name"></td>
+        </tr>
+        <tr>
+          <td><label for="email">Email:</label></td>
+          <td><input type="email" id="email" name="email"></td>
+        </tr>
+        <tr>
+          <td><label for="phone">Phone:</label></td>
+          <td><input type="tel" id="phone" name="phone"></td>
+        </tr>
+        <tr>
+          <td><label for="doa">Date of Appointment Required:</label></td>
+          <td><input type="date" id="doa" name="doa"></td>
+        </tr>
+        <tr>
+          <td><label>Service Required:</label></td>
+          <td>
+            <input type="radio" id="new-project" name="servicetype" value="new-project">
+            <label for="new-project">New Project</label>
+            
+            <input type="radio" id="maintenance" name="servicetype" value="maintenance">
+            <label for="maintenance">Maintenance</label>
+<br> <br>
+          </td>
+        </tr>
+        <tr>
+          <td><label>Interests:</label></td>
+          <td>
+            <input type="checkbox" id="landscaping" name="interests" value="landscaping">
+            <label for="landscaping">Landscaping Services</label>
+            
+            <input type="checkbox" id="garden-design" name="interests" value="garden-design">
+            <label for="garden-design">Garden Design</label>
+          </td>
+        </tr>
+        <tr>
+          <td><label for="country">Country:</label></td>
+          <td>
+            <select id="country" name="country">
+              <option value="usa">USA</option>
+              <option value="canada">Canada</option>
+              <option value="uk">UK</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2" class="centeralign">
+            <input type="submit" value="Submit">
+            <input type="reset" value="Reset">
+          </td>
+        </tr>
+      </table>
+    </form>
+      
+      </div>
+      
+      <footer>
+        <p>
+          <a href="index.html">HOME</a> | 
+          <a href="About Us.html">ABOUT US</a> | 
+          <a href="Portfolio.html">PORTFOLIO</a> | 
+          <a href="Services.html">SERVICES</a> | 
+          <a href="Contact Us.html">CONTACT US</a>
+        </p>
+          <em>@vurbanlandscapingservices</em>
+        </footer>
+  
+  </body>
+  </html>
+  

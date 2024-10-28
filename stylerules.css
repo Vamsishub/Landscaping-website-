@@ -1,0 +1,137 @@
+header{background: #e3f702 ;
+   
+}
+  
+  
+  nav{ 
+
+    
+  }
+
+  h1{font-family: Arial; color:#b8b4b7;}
+  p{font-family: Arial; color:#1f1601 ;}
+  h2{font-family: Arial;}
+  h3{font-family: Arial;}
+
+  #container {
+    max-width: 960px;
+    margin: 0 auto;
+    
+   
+  }
+  
+  #left {
+    float: left;
+    width: 20%;
+   
+    
+  }
+  
+  #main {
+    float: right;
+    width: 80%;
+   
+  }
+  
+  footer {
+    clear: both;
+    padding: 20px;
+      text-align: center;
+    
+    
+  }
+  
+  .centertext {
+    text-align: center;
+    
+  }
+  .Menu {
+    border: none;
+    border-collapse: separate;
+    border-spacing: 1px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    margin: 0 auto;
+  }
+  
+  .Menu td {
+    padding: 5px 15px;
+    border: 2px solid #e3f702;
+    border-radius: 10px 10px 0px 0px;
+    background: #b8b4b7;
+    text-align: center;
+    color: #1f1601;
+  }
+  
+  .Menu td a {
+    color:#1f1601;
+    text-decoration: none;
+  }
+  
+  .Menu td a:hover {
+    color: #0e9604;
+    background: #e3f702;
+  }
+  
+  
+  #pricelist td,
+  #pricelist th {
+    border: 1px solid #dcdcdc;
+    color: #333333; 
+    background-color: #f5f5f5;
+  }
+  
+  #pricelist {
+    border: 1px solid #dcdcdc;
+    border-collapse: separate;
+    border-spacing: 1px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+  }
+  
+
+form {
+  margin-top: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="date"],
+select {
+  width: 150%;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+  margin-bottom: 5px;
+  margin-right: 5px;
+}
+
+input[type="submit"],
+input[type="reset"] {
+  padding: 10px 20px;
+  background-color: #e3f702;
+  border: none;
+  border-radius: 4px;
+  color: #1f1601;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover,
+input[type="reset"]:hover {
+  background-color: #b8b4b7;
+}
+
+
+
